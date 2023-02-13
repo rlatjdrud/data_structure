@@ -29,10 +29,13 @@ OBJS = $(SRCS:.cc=.o)
 # $(OBJS) 안의 %.o가 붙은 파일들 이름 앞에 $(OBJ_DIR)/ 을 붙인다.
 OBJECTS = $(patsubst %.o,$(OBJ_DIR)/%.o,$(OBJS))
 
-
+#(OBJ_DIR)./%.o를 $(OBJECTS)로 하니 오류뜸 
+#목적파일을 만들때는 (OBJ_DIR)./%.o, $(SRC_DIR)/%.cc  사용
 $(OBJ_DIR)/%.o : $(SRC_DIR)/%.cc
-	$(CC) $(CXXFLAGS) $(INCLUDE) -c $< -o $@  
-
+	$(CC) $(CXXFLAGS) $(INCLUDE) -c $< -o $@
+	
+# $(OBJECT) 대신에 (OBJ_DIR)./%.o를 쓰니까 오류발생 
+# 실행파일만들땐 $(OBJECTS)를 사용
 $(TARGET) : $(OBJECTS)
 	$(CC) $(CXXFLAGS) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
 
