@@ -26,7 +26,7 @@ SRCS = $(notdir $(wildcard $(SRC_DIR)/*.cc))
 
 OBJS = $(SRCS:.cc=.o)
 
-# OBJS 안의 object 파일들 이름 앞에 $(OBJ_DIR)/ 을 붙인다.
+# $(OBJS) 안의 %.o가 붙은 파일들 이름 앞에 $(OBJ_DIR)/ 을 붙인다.
 OBJECTS = $(patsubst %.o,$(OBJ_DIR)/%.o,$(OBJS))
 
 
