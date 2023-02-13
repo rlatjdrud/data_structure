@@ -28,6 +28,7 @@ OBJS = $(SRCS:.cc=.o)
 
 # $(OBJS) 안의 %.o가 붙은 파일들 이름 앞에 $(OBJ_DIR)/ 을 붙인다.
 OBJECTS = $(patsubst %.o,$(OBJ_DIR)/%.o,$(OBJS))
+# $(OBJECTS) 와 $(OBJ_DIR)/%.o 가 같다고 생각하였으나.
 
 #(OBJ_DIR)./%.o를 $(OBJECTS)로 하니 오류뜸 
 #목적파일을 만들때는 (OBJ_DIR)./%.o, $(SRC_DIR)/%.cc  사용
