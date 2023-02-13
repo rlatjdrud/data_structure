@@ -25,7 +25,6 @@ TARGET = main
 SRCS = $(notdir $(wildcard $(SRC_DIR)/*.cc))
 
 OBJS = $(SRCS:.cc=.o)
-DEPS = $(SRCS:.cc=.d)
 
 # OBJS 안의 object 파일들 이름 앞에 $(OBJ_DIR)/ 을 붙인다.
 OBJECTS = $(patsubst %.o,$(OBJ_DIR)/%.o,$(OBJS))
@@ -40,5 +39,5 @@ $(TARGET) : $(OBJECTS)
 
 .PHONY: clean all
 clean:
-	rm -f $(OBJECTS) $(DEPS) $(TARGET)
+	rm -f $(OBJECTS) $(TARGET)
 
