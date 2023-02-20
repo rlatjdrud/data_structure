@@ -87,3 +87,29 @@ Cancel changes
  - rear 포인터는 늘 젤 뒤의 노드를 가르켜야 하므로 새 노드의 주소를 가리킨다.
  
 ![deque4](./img/deque4.jpg)
+
+## 큐에 있는 맨앞데이터를 제거 시 <br>
+> element deletefront(dqtype* dq)<br>
+>{	<br>
+>	element item;<br>
+>	if(isempty(dq))<br>
+>	{<br>
+>		return 0;<br>
+>	}<br>
+>	else {<br>
+>	dqnode* old = dq->front;<br>
+>	item=old->data;<br>
+>	if(dq->front->next==NULL)<br>
+>	{<br>
+>	dq->front = NULL;<br>
+>	dq->rear = NULL;<br>
+>	}<br>
+>	else
+>	{<br>
+>	dq->front = dq->front->next;<br>
+>	dq->front->pre=NULL;<br>
+>	delete old;<br>
+>	}<br>
+>	}<br>
+>	return item;<br>
+>}<br>
