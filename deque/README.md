@@ -88,7 +88,7 @@ Cancel changes
  
 ![deque4](./img/deque4.jpg)
 
-## 큐에 있는 맨앞데이터를 제거 시 <br>
+## 큐에 있는 맨앞 데이터를 제거 시 <br>
 > element deletefront(dqtype* dq)<br>
 >{	<br>
 >	element item;<br>
@@ -113,3 +113,11 @@ Cancel changes
 >	}<br>
 >	return item;<br>
 >}<br>
+
+### if(isempty(dq)) 
+- 큐에 데이터가 없을 시 제거연산을 수행하지 않음
+### if(dq->front->next==NULL)
+### dq->front = NULL;<br>
+### dq->front = NULL;<br>
+- dq->front->next==NULL은 맨 앞의 데이터의 오른쪽에 아무 노드가 없을때 라는 뜻이다 
+> 즉 큐에 노드가 하나있는것을 제거 할때 front와 rear를 NULL로 저장.
