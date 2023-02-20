@@ -130,3 +130,4 @@ Cancel changes
 - 그리고 제거해야할 노드가 지워지면 front가 가리키는 노드가 맨 앞이 되므로 pre를 NULL로 저장
 ### delete old;<br>
 - 제거해야할 노드를 제거 
+![deque6](./img/deque6.jpg)
