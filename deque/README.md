@@ -122,7 +122,8 @@ Cancel changes
 - dq->front->next==NULL은 맨 앞의 데이터의 오른쪽에 아무 노드가 없을때 라는 뜻이다 
 > 즉 큐에 노드가 하나있는것을 제거 할때 front와 rear를 NULL로 저장.
 ### dqnode* old = dq->front
-- old라는 노드를 가리키는 포인터에 현재 맨앞의 노드의 주소를 저장
+- old:노드를 가리키는 포인터 
+- Old에 현재 맨앞의 노드의 주소를 저장
 ### dq->front = dq->front->next
 - 현재 front포인터가 제거해야할 노드의 오른쪽 노드주소를 가리키도록 함.
 ### dq->front->pre=NULL
