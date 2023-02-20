@@ -132,6 +132,7 @@ Cancel changes
 - 제거해야할 노드를 제거 
 ![deque6](./img/deque6.jpg)
 
+
 ## 큐에 있는 맨 뒤 데이터를 제거 시 <br>
 >element deleterear(dqtype* dq)<br>
 {	element item;<br>
@@ -157,3 +158,4 @@ Cancel changes
 		}<br>
 	<br>
 >	}<br>
+![deque7](deque7.jpg)
