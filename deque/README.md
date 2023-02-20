@@ -45,7 +45,9 @@ Cancel changes
 >		dq->front=newnode;<br>
 ><br>
 >	}<br>
->}<br>
+>}
+
+<br>
  ###newnode->next=dq->front 
  - 새 노드가 맨 앞으로 오게되므로 새 노드의 next에 가장 앞에있었던 노드의 주소를 저장한다.<br>
  ###newnode->pre=NULL
