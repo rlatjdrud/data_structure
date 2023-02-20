@@ -133,27 +133,27 @@ Cancel changes
 ![deque6](./img/deque6.jpg)
 
 ## 큐에 있는 맨 뒤 데이터를 제거 시 <br>
->element deleterear(dqtype* dq)
->{	element item;
->	dqnode* old = dq->rear;
->	if(isempty(dq))
->	{
->		return 0;
->	}
->	
->	else
->	{	
->		
-		item = old->data;
-		if(dq->rear->pre == NULL)
-		{
-			dq->front=NULL;
-			dq->rear=NULL;
-		}
-		else
-		{
-			dq->rear = dq->rear->pre;
-			dq->rear->next=NULL;
-		}
-	
-	}
+>element deleterear(dqtype* dq)<br>
+{	element item;<br>
+	dqnode* old = dq->rear;<br>
+	if(isempty(dq))<br>
+	{<br>
+		return 0;<br>
+	}<br>
+	<br>
+	else<br>
+	{	<br>
+		<br>
+		item = old->data;<br>
+		if(dq->rear->pre == NULL)<br>
+		{<br>
+			dq->front=NULL;<br>
+			dq->rear=NULL;<br>
+		}<br>
+		else<br>
+		{<br>
+			dq->rear = dq->rear->pre;<br>
+			dq->rear->next=NULL;<br>
+		}<br>
+	<br>
+>	}<br>
