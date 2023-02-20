@@ -135,7 +135,8 @@ Cancel changes
 
 ## 큐에 있는 맨 뒤 데이터를 제거 시 <br>
 >element deleterear(dqtype* dq)<br>
-{	element item;<br>
+{<br>	
+element item;<br>
 	dqnode* old = dq->rear;<br>
 	if(isempty(dq))<br>
 	{<br>
