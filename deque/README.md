@@ -13,4 +13,5 @@
 >		dq->front = newnode;<br>
 >		dq->rear = newnode;<br>
 >	}<br>
+
 ![deque3](./img/deque3.jpg)
