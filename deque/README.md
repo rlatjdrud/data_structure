@@ -15,3 +15,15 @@
 >	}<br>
 
 ![deque3](./img/deque3.jpg)
+
+## 비어있는 큐에 데이터를 뒤에서 삽입 시
+> void insertrear(dqtype* dq,element data)<br>
+>{<br>
+>	dqnode* newnode = new dqnode(data,NULL,NULL); <br>
+>	if(isempty(dq))<br>
+>{<br>
+>		dq->front = newnode;<br>
+>		dq->rear = newnode;<br>
+>	}<br>
+
+![deque3_1](./img/deque3_1.jpg)
