@@ -131,3 +131,29 @@ Cancel changes
 ### delete old;<br>
 - 제거해야할 노드를 제거 
 ![deque6](./img/deque6.jpg)
+
+## 큐에 있는 맨 뒤 데이터를 제거 시 <br>
+>element deleterear(dqtype* dq)
+>{	element item;
+>	dqnode* old = dq->rear;
+>	if(isempty(dq))
+>	{
+>		return 0;
+>	}
+>	
+>	else
+>	{	
+>		
+		item = old->data;
+		if(dq->rear->pre == NULL)
+		{
+			dq->front=NULL;
+			dq->rear=NULL;
+		}
+		else
+		{
+			dq->rear = dq->rear->pre;
+			dq->rear->next=NULL;
+		}
+	
+	}
