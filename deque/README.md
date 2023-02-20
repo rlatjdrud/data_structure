@@ -4,7 +4,7 @@
 ![deque1](./img/deque1.jpg)
 ![deque2](./img/deque2.jpg)
 ## 비어있는 큐에 데이터를 앞에서 삽입 시
-> #void insertfront(dqtype* dq,element data)#<br>
+> /void insertfront(dqtype* dq,element data)/<br>
 >{
 >	dqnode* newnode = new dqnode(data,NULL,NULL); <br>
 >	if(isempty(dq))<br>
