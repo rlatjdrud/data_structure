@@ -6,9 +6,9 @@
 ## 비어있는 큐에 데이터를 앞에서 삽입 시
 >void insertfront(dqtype* dq,element data)
 >{
->	dqnode* newnode = new dqnode(data,NULL,NULL);
->	if(isempty(dq))
->{
->		dq->front = newnode;
->		dq->rear = newnode;
->	}
+>	dqnode* newnode = new dqnode(data,NULL,NULL); <br>
+>	if(isempty(dq))<br>
+>{<br>
+>		dq->front = newnode;<br>
+>		dq->rear = newnode;<br>
+>	}<br>
