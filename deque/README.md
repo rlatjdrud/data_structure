@@ -58,3 +58,32 @@ Cancel changes
  - front 포인터는 늘 젤 앞의 노드를 가르켜야 하므로 새 노드의 주소를 가리킨다.
  
 ![deque4](./img/deque5.jpg)
+
+## 이미 노드가 있는 큐에 뒤에서 새 노드를 삽입 시
+>void insertrear(dqtype* dq,element data)<br>
+>{	dqnode* newnode = new dqnode(data,NULL,NULL);<br>
+>	if(isempty(dq))<br>
+>	{<br>
+>		dq->front = newnode;<br>
+>		dq->rear = newnode;<br>
+>	}<br>
+>	else<br>
+>	{<br>
+>		newnode->pre = dq->rear;<br>
+>		newnode->next = NULL;<br>
+> 	dq->rear->next = newnode;<br>
+> 	dq->rear = newnode;<br>
+>}<br>
+>}<br>
+
+
+ ### newnode->pre=dq->rear 
+ - 새 노드가 맨 뒤로 오게되므로 새 노드의 pre에 기존애 가장 뒤에있었던 노드의 주소를 저장한다.
+ ### newnode->next=NULL
+ - 마찬가지로 새 노드 뒤에는 아무 노드가 없으므로 next에는 NULL를 저장한다.
+ ### dq->rear->next = newnode
+ - 기존에 맨 enl이 었던 노드앞에 새 노드가 생겼으므로 dq->front->next(기존에 있던 노드의 next)에 새 노드의 주소를 넣는다. 
+ ### dq->rear = newnode
+ - rear 포인터는 늘 젤 뒤의 노드를 가르켜야 하므로 새 노드의 주소를 가리킨다.
+ 
+![deque4](./img/deque5.jpg)
