@@ -57,4 +57,4 @@ Cancel changes
  ### dq->front = newnode
  - front 포인터는 늘 젤 앞의 노드를 가르켜야 하므로 새 노드의 주소를 가리킨다.
  
-![deque4](./img/deque4.jpg)
+![deque4](./img/deque5.jpg)
