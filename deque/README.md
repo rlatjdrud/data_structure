@@ -47,12 +47,12 @@ Cancel changes
 >	}<br>
 >}<br>
  ###newnode->next=dq->front 
- - 새 노드가 맨 앞으로 오게되므로 새 노드의 next에 가장 앞에있었던 노드의 주소를 저장한다.
+ - 새 노드가 맨 앞으로 오게되므로 새 노드의 next에 가장 앞에있었던 노드의 주소를 저장한다.<br>
  ###newnode->pre=NULL
- - 마찬가지로 새 노드 앞에는 아무 노드가 없으므로 pre에는 NULL를 저장한다.
+ - 마찬가지로 새 노드 앞에는 아무 노드가 없으므로 pre에는 NULL를 저장한다.<br>
  ###dq->front->pre = newnode
- - 기존에 맨 앞이 었던 노드앞에 새 노드가 생겼으므로 dq->front->pre(기존에 있던 노드의 pre)에 새 노드의 주소를 넣는다. 
+ - 기존에 맨 앞이 었던 노드앞에 새 노드가 생겼으므로 dq->front->pre(기존에 있던 노드의 pre)에 새 노드의 주소를 넣는다. <br>
  ###dq->front = newnode
- - front 포인터는 늘 젤 앞의 노드를 가르켜야 하므로 새 노드의 주소를 가리킨다.
+ - front 포인터는 늘 젤 앞의 노드를 가르켜야 하므로 새 노드의 주소를 가리킨다.<br>
  
 ![deque4](./img/deque4.jpg)
