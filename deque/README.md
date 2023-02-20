@@ -158,4 +158,4 @@ Cancel changes
 		}<br>
 	<br>
 >	}<br>
-![deque7](deque7.jpg)
+![deque7](./img/deque7.jpg)
