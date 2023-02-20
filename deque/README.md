@@ -125,7 +125,7 @@ Cancel changes
 - old:노드를 가리키는 포인터 
 - Old에 현재 맨앞의 노드의 주소를 저장
 ### dq->front = dq->front->next
-- 현재 front포인터가 제거해야할 노드의 오른쪽 노드주소를 가리키도록 함.
+- front포인터가 제거해야할 노드의 오른쪽 노드주소를 가리키도록 함.
 ### dq->front->pre=NULL
 - 그리고 제거해야할 노드가 지워지면 front가 가리키는 노드가 맨 앞이 되므로 pre를 NULL로 저장
 ### delete old;<br>
