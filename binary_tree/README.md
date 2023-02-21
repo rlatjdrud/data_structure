@@ -7,6 +7,5 @@
 ![binary5](./img/binary5.jpg)
 ![binary5](./img/binary7.jpg)
 ![binary5](./img/binary7_1.jpg)
-![binary5](./img/binary8.jpg)
 ![binary5](./img/binary9.jpg)
 ![binary5](./img/binary10.jpg)
