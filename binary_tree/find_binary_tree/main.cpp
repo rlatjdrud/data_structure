@@ -42,9 +42,9 @@ treenode* insertkey(treenode* p, char x)
 
 }
 
-void insert (treenode* root, char x)
+void insert (treenode** root, char x)
 {
-	root=insertkey(root,x);
+	*root=insertkey(*root,x);
 }
 
 treenode* search(treenode* root, char x)
@@ -77,17 +77,17 @@ int main()
 	treenode* root = NULL;
 	treenode* foundnode = NULL;
 	char key;
-	insert(root,'G');
-	insert(root,'I');
-	insert(root,'H');
-	insert(root,'D');
-	insert(root,'B');
-	insert(root,'M');
-	insert(root,'N');
-	insert(root,'A');
-	insert(root,'J');
-	insert(root,'E');
-	insert(root,'Q');
+	insert(&root,'G');
+	insert(&root,'I');
+	insert(&root,'H');
+	insert(&root,'D');
+	insert(&root,'B');
+	insert(&root,'M');
+	insert(&root,'N');
+	insert(&root,'A');
+	insert(&root,'J');
+	insert(&root,'E');
+	insert(&root,'Q');
 	
 	printf("%u\n",root);
 	printf("\n 찾을 문자열을 입력: ");
